@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Satou Bank</title>
+    <!-- Render all element normally -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <!-- Font Awesome Library -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- Main File Css -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Google Fonts -->
+  </head>
+
+  <body>
+    <!-- Nav Bar Start -->
+    <nav>
+      <div class="logo_title"><img src="img/logo.png" alt="logo" class="bank_icon" /> <p class="loging_name">Log in to get started</p></div>
+      
+      <div class="log_icon-holder">
+        <div class="error_log"><span>!</span><span>Error:</span><p>The username or password  is incorrect</p></div>
+        <img class="log_icon-acc" src="img/3201587-200.png"  >
+  <form action="" class="log_in_form">
+      <input
+          type="text"
+          placeholder="User Name"
+          maxlength="10"
+          class="input_username"
+        />
+        <input
+          type="password"
+          placeholder="Password"
+          maxlength="5"
+          class="input_password"
+        />
+   <div class="icon_holder">
+          <button class="btn_login"> Log in<img src="img/log-in.png" alt="" ></button>
+         <button class="btn_logout">  Log Out<img src="img/logout.png" alt="" ></button>
+        </div> 
+        
+     <!--  <button class="btn_login">→</button>   -->
+      </form>
+      </div>
+    
+     
+    </nav> 
+    <div class="overlay">
+        
+      <h2 style="
+      color: #333;
+margin-bottom: 40px
+      ">Account For Testing:</h2>
+      
+      <div class="">
+      <p class="testing">UserName: <span>ss</span></p>
+      <p class="testing">PassWord: <span>11111</span></p>
+      </div>
+      <div class="">
+      <p class="testing">UserName: <span>yyd</span></p>
+      <p class="testing">PassWord: <span>22222</span></p>
+      </div>
+      <div class="">
+      <p class="testing">UserName: <span>bsd</span></p>
+      <p class="testing">PassWord: <span>33333</span></p>
+      </div>
+      <div class="">
+      <p class="testing">UserName: <span>ocb</span></p>
+      <p class="testing">PassWord: <span>44444</span></p>
+      </div>
+  </div>
+    <!-- Nav Bar End -->
+    <div class="balance">
+      <div>
+        <p class="current_balance">Current balance</p>
+        <p class="current_date">As of <span class="date">05/03/2037</span></p>
+      </div>
+      <p class="balance_value">9999 &euro;</p>
+    </div>
+    <!-- Main Start -->
+    <main class="app">
+      <div class="container">
+        
+        <div class="balance_movements_container">
+          <div class="sort_select_container">
+            <div class="movements_type_select">
+              <select name="" id="" class="select_d_w" >
+                <option value="all_money" data-money=".all_money">All</option>
+                <option value="deposit" data-money=".sel_deposit">Deposit</option>
+                <option value="withdrawal" data-money=".sel_withdrawal">Withdrawal</option>
+              </select>
+            </div>
+            <div class="sort"><span>↓</span> sort</div>
+          </div>
+       
+        <section class="balance_movements">
+          <div class="movements_container all sel_deposit">
+            <div class="movements_type movements_type-deposit">2 deposit</div>
+            <div class="movements_date">4 days AGo</div>
+            <div class="movements_value">5 000 &euro;</div>
+          </div>
+          <div class="movements_container all sel_withdrawal">
+            <div class="movements_type movements_type-withdrawal">
+              5 withdrawal
+            </div>
+            <div class="movements_date">10 days AGo</div>
+            <div class="movements_value">-10 000 &euro;</div>
+          </div>
+        </div>
+        </section>
+        <!--Operations  -->
+        <section class="section_operation">
+          <!--Operation Transfer  -->
+          <div class="operation operation_trasfer">
+            <h2>Transfer money</h2>
+            <form action="" class="operation_form">
+              <div class="div_input_form">
+                <input type="text" class="form_input form_input_to" />
+                <label for="" class="label_form">Transfer to</label>
+              </div>
+              <div class="div_input_form">
+                <input type="number" class="form_input form_input_amount" />
+                <label for="" class="label_form">Amount</label>
+              </div>
+
+              <button class="btn_form btn_form_trasfer">→</button>
+            </form>
+          </div>
+          <!--  -->
+          <!--Operation Request loan  -->
+          <div class="operation operation_request_loan">
+            <h2>Request loan</h2>
+            <form action="" class="operation_form">
+              <div class="div_input_form">
+                <input type="number" class="form_input form_input_loan" />
+                <label for="" class="label_form">Amount</label>
+              </div>
+
+              <button class="btn_form btn_form_loan">→</button>
+            </form>
+          </div>
+          <!--  -->
+          <!--Operation Close account -->
+          <div class="operation operation_close_account">
+            <h2>Close account</h2>
+            <form action="" class="operation_form">
+              <div class="div_input_form">
+                <input type="text" class="form_input form_input_close" />
+                <label for="" class="label_form">Confirm user</label>
+              </div>
+              <div class="div_input_form">
+                <input type="password" class="form_input form_input_password_close"  maxlength="5"/>
+                <label for="" class="label_form">Confirm PIN </label>
+              </div>
+
+              <button class="btn_form btn_form_close">→</button>
+            </form>
+          </div>
+        </section>
+        <section class="summary">
+        
+            <p class="summary_value">
+              in <span class="in_value">0000 &euro;</span>
+            </p>
+            <p class="summary_value">
+              out <span class="out_value">0000 &euro;</span>
+            </p>
+            <p class="summary_value">
+              interest <span class="interest_value">0000 &euro;</span>
+            </p>
+        
+        </section>
+        <section class="date_logout">
+          <p>You will be logged out in <span>05:00</span></p>
+        </section>
+      </div>
+    </main>
+    <script src="js/main.js"></script>
+  </body>
+</html>
